@@ -4,7 +4,13 @@ import { Button } from './Button';
 import { SelectMenu } from './SelectMenu';
 
 export interface ActionRow {
-  components?: [SelectMenu] | Button[];
+  components?:
+    | [SelectMenu]
+    | [Button]
+    | [Button, Button]
+    | [Button, Button, Button]
+    | [Button, Button, Button, Button]
+    | [Button, Button, Button, Button, Button];
 }
 
 export class ActionRow extends Base implements Component {
