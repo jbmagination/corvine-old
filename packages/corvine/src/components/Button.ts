@@ -24,7 +24,7 @@ export interface Button extends SelectButtonShared {
 export class Button extends Base implements Component {
   type = ComponentTypes.Button;
 
-  constructor(props?: Omit<Button, 'toJSONString' | 'toObject' | 'type'>) {
+  constructor(props: Omit<Button, 'toJSONString' | 'toObject' | 'type'>) {
     super();
     Object.assign(this, props);
   }
