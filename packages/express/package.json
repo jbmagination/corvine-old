@@ -8,10 +8,10 @@
     "discord",
     "interactions"
   ],
-  "author": "ItsRauf <raufislam2003@gmail.com>",
+  "author": "ItsRauf",
   "homepage": "https://github.com/corvinejs/corvine#readme",
   "license": "MIT",
-  "main": "lib/corvine-express.js",
+  "main": "lib/express.js",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -19,6 +19,9 @@
   "files": [
     "lib"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/corvinejs/corvine.git"
@@ -29,8 +32,5 @@
   },
   "bugs": {
     "url": "https://github.com/corvinejs/corvine/issues"
-  },
-  "dependencies": {
-    "corvine": "^0.0.0"
   }
 }
