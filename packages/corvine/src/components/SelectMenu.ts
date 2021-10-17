@@ -23,7 +23,7 @@ export interface SelectMenu extends SelectButtonShared {
 
 export class SelectMenu extends Base implements Component {
   type = ComponentTypes.SelectMenu;
-  constructor(props: Omit<SelectMenu, 'toJSON' | 'toObject' | 'type'>) {
+  constructor(props: Omit<SelectMenu, 'toJSONString' | 'toObject' | 'type'>) {
     super();
     Object.assign(this, props);
   }
