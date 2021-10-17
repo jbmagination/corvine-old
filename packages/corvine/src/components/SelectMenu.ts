@@ -15,7 +15,8 @@ export interface SelectMenuOptions {
 }
 
 export interface SelectMenu extends SelectButtonShared {
-  options?: SelectMenuOptions[];
+  custom_id: string;
+  options: SelectMenuOptions[];
   placeholder?: string;
   min_values?: number;
   max_values?: number;
