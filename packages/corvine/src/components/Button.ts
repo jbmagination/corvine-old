@@ -15,7 +15,7 @@ export enum ButtonStyles {
 }
 
 export interface Button extends SelectButtonShared {
-  style?: ButtonStyles;
+  style: ButtonStyles;
   label?: string;
   emoji?: PartialEmoji;
   url?: string | never;
