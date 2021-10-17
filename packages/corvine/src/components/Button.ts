@@ -5,6 +5,7 @@ import {
   SelectButtonShared,
 } from '../shared/Component';
 import { Base } from '../shared/Base';
+import { OmitType, Props } from '../shared/Props';
 
 export enum ButtonStyles {
   Primary = 1,
@@ -24,7 +25,7 @@ export interface Button extends SelectButtonShared {
 export class Button extends Base implements Component {
   type = ComponentTypes.Button;
 
-  constructor(props: Omit<Button, 'toJSONString' | 'toObject' | 'type'>) {
+  constructor(props: OmitType<Props<Button>>) {
     super();
     Object.assign(this, props);
   }
