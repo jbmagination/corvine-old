@@ -1,0 +1,16 @@
+import { Base } from '../shared/Base';
+import { Component, ComponentTypes } from '../shared/Component';
+import { Button } from './Button';
+import { SelectMenu } from './SelectMenu';
+
+export interface ActionRow {
+  components?: [SelectMenu] | Button[];
+}
+
+export class ActionRow extends Base implements Component {
+  type = ComponentTypes.ActionRow;
+  constructor(props?: Pick<ActionRow, 'components'>) {
+    super();
+    this.components = props?.components;
+  }
+}
